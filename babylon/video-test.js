@@ -1,4 +1,4 @@
-import { World, OpenViduStreams } from './vrspace-ui.js'
+import { World, OpenViduStreams } from './js/vrspace-min.js'
 
 export class VideoWorld extends World {
   async createScene(engine) {
@@ -70,8 +70,8 @@ export class VideoWorld extends World {
   
 }
 
-var OPENVIDU_SERVER_URL = "https://" + location.hostname + ":4443";
-var OPENVIDU_SERVER_SECRET = "MY_SECRET";
+var OPENVIDU_SERVER_URL = "https://" + "192.168.138.108";
+var OPENVIDU_SERVER_SECRET = "Nazi";
 
 async function getToken(mySessionId) {
   return createSession(mySessionId).then(sId => createToken(sId));

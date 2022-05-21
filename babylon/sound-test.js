@@ -77,8 +77,8 @@ export class Dance extends World {
   
 }
 
-var OPENVIDU_SERVER_URL = "https://" + location.hostname + ":4443";
-var OPENVIDU_SERVER_SECRET = "MY_SECRET";
+var OPENVIDU_SERVER_URL = "https://" + "192.168.138.108";
+var OPENVIDU_SERVER_SECRET = "Nazi";
 
 async function getToken(mySessionId) {
   return createSession(mySessionId).then(sId => createToken(sId));
